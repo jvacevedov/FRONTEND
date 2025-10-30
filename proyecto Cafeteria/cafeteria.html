@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAFETERIA</title>
+  </head>
+  <body>
+    <h1>¡Bienvenidos a la Cafeteria!</h1>
+    <p>Página de una cafereria</p>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="procesar-formulario" method="POST">
+        <fieldset>
+          <legend>Datos de contacto</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br /><br />
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+          <br /><br />
+
+          <label for="consultaTipo">Tipo de consulta:</label>
+          <select id="consultaTipo" name="consultaTipo" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="reservas">Reservas</option>
+            <option value="precio">Precios</option>
+            <option value="menuEspecial">Menú especial</option>
+            <optgroup label="Otros">
+              <option value="empleo">Trabaja con nosotros</option>
+              <option value="otros">Otros</option>
+            </optgroup>
+          </select>
+          <br /><br />
+
+          <label for="consulta">Dejanos tus mensaje:</label>
+          <input type="text" id="consulta" name="consulta" required />
+        </fieldset>
+        <br /><br />
+
+        <input type="checkbox" required name="politicaPrivacidad" name="rests">Acepto la <u>politica de privacidad</u>
+        <br /><br />
+        <button type="submit">Enviar pedido</button>
+        <button type="reset">Borrar todo</button>
+      </form>
+    </section>
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li>Desayunos</li>
+        <li>Almuerzos</li>
+        <li>Cenas</li>
+        <li>Postres</li>
+        <li>Bebidas</li>
+      </ul>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Una página de ejemplo que demuestra mi hoja de vida.">
+    <meta name="author" content="Jessica"> 
+    <meta name="keywords" content="html5, semantica, accesibilidad, desarrollo web"> 
+    <meta property="og:title" content="Perfil de persona - HTML5">
+    <meta property="og:description" content="Demostración de estructura, semántica y accesibilidad en HTML5.">
+    <title>Mi perfil</title>
+  </head>
+  <body>
+    <header>
+      <h1>Información</h1>
+      <p>Ingeniera Química / Profesional Procesos</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#inicio">Inicio</a> | <a href="#sobreMi">Sobre mi</a> |
+      <a href="#proyectos">Proyectos</a> |
+      <a href="contacto.html">Contacto</a>
+      
+    </nav>
+
+    <main id="inicio">
+      <!-- SECTION: Sobre mí -->
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <img src="foto.jpg" alt="Mi foto" width="150" />
+        <p>
+          Ingeniera química con formación técnica en análisis de datos y
+          habilidades sólidas en programación con Python y manejo avanzado de
+          Excel. Me destaco por una alta capacidad analítica, orientación a
+          resultadosy facilidad para aprender nuevas herramientas tecnológicas.
+          Proactiva, organizada y
+          confuerte compromiso hacia el aprendizajecontinuo y la mejora
+          constante.
+        </p>
+      </section>
+
+      <!-- SECTION: Tabla de habilidades -->
+      <section id="habilidades">
+        <h2>Tabla de habilidades</h2>
+        <table border="1" cellpadding="10">
+          <tr>
+            <th>Habilidad</th>
+            <th>Nivel</th>
+            <th>Experiencia</th>            
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Básico</td> 
+            <td>10 días</td>
+          </tr>
+           <tr>
+            <td>Python</td>
+            <td>Básico</td>
+            <td>2 meses</td>
+          </tr>
+            <tr>
+            <td>SQL</td>
+            <td>Intermedio</td>
+            <td>6 meses</td>
+          </tr>          
+          <tr>
+            <td>Inglés</td>
+            <td>Intermedio</td>
+            <td>3 años</td>
+          </tr>
+          <tr>
+            <td>Excel</td>
+            <td>Intermedio</td>
+            <td>2 años</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <ul>
+          <li><p><strong>TÍTULO: ANÁLISIS ESPACIAL DE LA
+                CALIDAD DEL AIRE EN COLOMBIA POR
+                MEDIO DE DATOS DE REÁNALISIS</strong> Informe del estado de la calidad del aire
+                en Colombia 2021
+                IDEAM - 2022
+                ISSN: 2619-4403</p></li>
+          <li><a href="#inicio">Este sitio</a></li>
+        </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Jéssica- Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

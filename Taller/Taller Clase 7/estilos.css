@@ -1,0 +1,148 @@
+/* Variables de colores y tipografía */
+:root {
+  --color-principal: #370606;
+  --color-secundario: #f0d9d9;
+  --color-acento: #6e2c2c;
+  --fuente: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente);
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
+
+/* Encabezado */
+.header {
+  background: var(--color-principal);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2%
+}
+
+/* Logo */
+.logo {
+  width: 4rem;
+    height: auto;
+}
+
+/* GRID 2 columnas sidebar y catalogo, sidebar solo 15% */
+.layout {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Barra lateral */
+.sidebar {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;   
+}
+.sidebar h2 {
+  margin-top: 10rem; /* bajar el texto */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+}
+
+.sidebar a {
+  display: block;            /* que ocupe todo el ancho */
+  padding: 0.5rem 1rem;      /* espacio interno */
+  color: var(--color-principal);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* transición suave */
+}
+
+.sidebar a:hover {
+  color: var(--color-acento);
+  transform: translateY(-3px);
+}
+
+/* Catálogo con Flexbox */
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.titulo-catalogo {
+  flex: 1 1 calc(100% - 1rem);
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.libro {
+  flex: 1 1 calc(33% - 1rem);
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, transform 0.3s ease; /* transición suave */
+}
+
+.libro:hover {
+  background: #f9f1f2;   /* cambia color de fondo */
+  transform: scale(1.03); /* pequeño zoom */
+}
+.boton-reserva {
+background-color: #b86976a7;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+}
+.boton-reserva:hover {
+background-color: #5f1111;
+}
+
+/* Pie de página */
+.footer {
+  background: var(--color-principal);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.boton-comentario {
+  background-color: #b86976a7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+ transition: background 0.3s ease, transform 0.5s ease; /* transición suave */
+}
+
+.boton-comentario:hover {
+  background: #f9f1f2;   /* cambia color de fondo */
+  transform: scale(0.5) translatex(1000px); /* pequeño zoomout */
+} 
+
+/* Responsividad */
+@media (max-width: 412px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .libro {
+    flex: 1 1 100%;
+  }
+}
